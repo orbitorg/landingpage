@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Globe, Zap, Code, Server } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "./logo.jpg";
 
 export function LandingPageComponent() {
@@ -168,9 +169,9 @@ export function LandingPageComponent() {
 									Expertise Across Ecosystems
 								</h3>
 								<p>
-									Our team's diverse experience in Cosmos, Ethereum, and Solana
-									allows us to provide comprehensive solutions tailored to your
-									specific needs.
+									Our team`&lsquo;`s diverse experience in Cosmos, Ethereum, and
+									Solana allows us to provide comprehensive solutions tailored to
+									your specific needs.
 								</p>
 							</CardContent>
 						</Card>
@@ -220,6 +221,41 @@ export function LandingPageComponent() {
 			<footer className="bg-gray-800 py-8">
 				<div className="container mx-auto px-4 text-center">
 					<p>&copy; 2023 Orbits Lab. All rights reserved.</p>
+				</div>
+				<div className="mt-8 flex justify-center space-x-4">
+					{/* Twitter */}
+					<Link
+						href="https://x.com/orbit__labs"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-primary hover:text-primary-foreground"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							className="h-6 w-6"
+							fill="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path d="M24 4.557a9.935 9.935 0 01-2.828.775 4.928 4.928 0 002.165-2.724 9.875 9.875 0 01-3.127 1.194 4.92 4.92 0 00-8.385 4.482 13.978 13.978 0 01-10.15-5.15 4.92 4.92 0 001.523 6.573A4.901 4.901 0 01.96 9.605v.062a4.918 4.918 0 003.946 4.827 4.902 4.902 0 01-2.224.084 4.926 4.926 0 004.6 3.417A9.872 9.872 0 010 21.542a13.94 13.94 0 007.548 2.213c9.056 0 14.01-7.496 14.01-13.986 0-.213-.005-.425-.015-.637A9.998 9.998 0 0024 4.557z" />
+						</svg>
+					</Link>
+
+					{/* GitHub */}
+					<Link
+						href="https://github.com/orbitorg"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-primary hover:text-primary-foreground"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							className="h-6 w-6"
+							fill="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.21.66-.47v-1.7c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.1-1.48-1.1-1.48-.9-.62.07-.6.07-.6 1 .07 1.53 1.02 1.53 1.02.9 1.56 2.34 1.11 2.91.85.09-.65.35-1.11.63-1.37-2.21-.25-4.53-1.1-4.53-4.93 0-1.09.39-1.98 1.03-2.68-.1-.26-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.02a9.56 9.56 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.66.64.7 1.03 1.59 1.03 2.68 0 3.84-2.33 4.67-4.54 4.91.36.31.68.93.68 1.87v2.77c0 .26.16.56.68.46C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z" />
+						</svg>
+					</Link>
 				</div>
 			</footer>
 		</div>
