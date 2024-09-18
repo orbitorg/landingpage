@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-	title: "Orbits Lab",
+	title: "OrbitLabs",
 	description: "Expert solutions for Cosmos, Ethereum, and Solana ecosystems",
 };
 

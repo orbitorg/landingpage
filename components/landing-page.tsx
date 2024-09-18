@@ -6,6 +6,7 @@ import { Globe, Zap, Code, Server } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "./logo.jpg";
+import BlockchainImage from "./blockchain.jpg";
 
 export function LandingPageComponent() {
 	return (
@@ -13,7 +14,7 @@ export function LandingPageComponent() {
 			<header className="container mx-auto px-4 py-6 flex justify-between items-center">
 				<div className="flex items-center space-x-2">
 					<Image src={Logo} alt="Blockchain Universe" className="rounded-lg w-10 h-10" />
-					<span className="text-2xl font-bold">Orbits Lab</span>
+					<span className="text-2xl font-bold">OrbitLabs</span>
 				</div>
 				<nav className="hidden md:flex space-x-4">
 					<a href="#about" className="hover:text-blue-400 transition">
@@ -40,27 +41,27 @@ export function LandingPageComponent() {
 					<p className="text-xl md:text-2xl mb-8">
 						Expert solutions for Cosmos, Ethereum, and Solana ecosystems
 					</p>
-					<Button
+					{/* <Button
 						className="text-lg px-6 py-3"
 						onClick={() => {
 							window.location.href = "#services";
 						}}
 					>
 						Explore Our Services
-					</Button>
+					</Button> */}
 				</section>
 
 				<section id="about" className="container mx-auto px-4 py-20">
 					<h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-						About Orbits Lab
+						About OrbitLabs
 					</h2>
 					<div className="grid md:grid-cols-2 gap-8 items-center">
 						<div>
 							<p className="text-lg mb-4">
-								Orbits Lab is a cutting-edge blockchain development team
-								specializing in Cosmos, Ethereum, and Solana ecosystems. With our
-								diverse expertise, we offer comprehensive solutions for both
-								on-chain and cross-chain decentralized applications.
+								OrbitLabs is a cutting-edge blockchain development team specializing
+								in Cosmos, Ethereum, and Solana ecosystems. With our diverse
+								expertise, we offer comprehensive solutions for both on-chain and
+								cross-chain decentralized applications.
 							</p>
 							<p className="text-lg">
 								Our mission is to propel blockchain technology forward, helping
@@ -70,7 +71,7 @@ export function LandingPageComponent() {
 						</div>
 						<div className="relative h-64 md:h-full">
 							<Image
-								src="/placeholder.svg?height=400&width=400"
+								src={BlockchainImage}
 								alt="Blockchain Universe"
 								layout="fill"
 								objectFit="contain"
@@ -160,7 +161,7 @@ export function LandingPageComponent() {
 
 				<section id="why-choose-us" className="container mx-auto px-4 py-20">
 					<h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-						Why Choose Orbits Lab?
+						Why Choose OrbitLabs?
 					</h2>
 					<div className="grid md:grid-cols-2 gap-8">
 						<Card className="bg-gray-800 border-blue-500">
@@ -220,7 +221,7 @@ export function LandingPageComponent() {
 
 			<footer className="bg-gray-800 py-8">
 				<div className="container mx-auto px-4 text-center">
-					<p>&copy; 2023 Orbits Lab. All rights reserved.</p>
+					<p>&copy; 2023 OrbitLabs. All rights reserved.</p>
 				</div>
 				<div className="mt-8 flex justify-center space-x-4">
 					{/* Twitter */}
