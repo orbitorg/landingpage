@@ -24,12 +24,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+		<html lang="en">
+			<head>
+				<meta
+					name="description"
+					content="OrbitLabs is a cutting-edge blockchain development team specializing in Cosmos, Ethereum, and Solana ecosystems. With our diverse expertise, we offer comprehensive solutions for both on-chain and cross-chain decentralized applications."
+				/>
+				<meta name="title" content="OrbitLabs - Expert Blockchain Team" />
+			</head>
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+				{children}
+			</body>
+		</html>
   );
 }
