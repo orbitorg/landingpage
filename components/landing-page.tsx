@@ -10,60 +10,76 @@ import BlockchainImage from "./blockchain.jpg";
 
 export function LandingPageComponent() {
 	return (
-		<div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-900 text-white">
+		<div className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-black text-white font-sans">
 			<header className="container mx-auto px-4 py-6 flex justify-between items-center">
 				<div className="flex items-center space-x-2">
-					<Image src={Logo} alt="Blockchain Universe" className="rounded-lg w-10 h-10" />
-					<span className="text-2xl font-bold">OrbitLabs</span>
+					<Image
+						src={Logo}
+						alt="Blockchain Universe"
+						className="rounded-full w-12 h-12 animate-spin-slow"
+					/>
+					<span className="text-3xl font-extrabold text-neon-blue">OrbitLabs</span>
 				</div>
 				<nav className="hidden md:flex space-x-4">
-					<a href="#about" className="hover:text-blue-400 transition">
+					<a
+						href="#about"
+						className="hover:text-neon-blue transition transform hover:scale-110"
+					>
 						About
 					</a>
-					<a href="#services" className="hover:text-blue-400 transition">
+					<a
+						href="#services"
+						className="hover:text-neon-blue transition transform hover:scale-110"
+					>
 						Services
 					</a>
-					<a href="#team" className="hover:text-blue-400 transition">
+					<a
+						href="#team"
+						className="hover:text-neon-blue transition transform hover:scale-110"
+					>
 						Team
 					</a>
-					<a href="#contact" className="hover:text-blue-400 transition">
+					<a
+						href="#contact"
+						className="hover:text-neon-blue transition transform hover:scale-110"
+					>
 						Contact
 					</a>
 				</nav>
-				<Button className="md:hidden">Menu</Button>
+				<Button className="md:hidden bg-neon-blue text-black">Menu</Button>
 			</header>
 
 			<main>
 				<section className="container mx-auto px-4 py-20 text-center">
-					<h1 className="text-4xl md:text-6xl font-bold mb-6">
+					<h1 className="text-5xl md:text-7xl font-extrabold mb-6 animate-pulse">
 						Navigating the Blockchain Universe
 					</h1>
-					<p className="text-xl md:text-2xl mb-8">
+					<p className="text-2xl md:text-3xl mb-8">
 						Expert solutions for Cosmos, Ethereum, and Solana ecosystems
 					</p>
-					{/* <Button
-						className="text-lg px-6 py-3"
+					<Button
+						className="text-lg px-6 py-3 bg-neon-blue text-black hover:bg-neon-blue-light"
 						onClick={() => {
 							window.location.href = "#services";
 						}}
 					>
 						Explore Our Services
-					</Button> */}
+					</Button>
 				</section>
 
 				<section id="about" className="container mx-auto px-4 py-20">
-					<h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+					<h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center text-neon-blue">
 						About OrbitLabs
 					</h2>
 					<div className="grid md:grid-cols-2 gap-8 items-center">
 						<div>
-							<p className="text-lg mb-4">
+							<p className="text-xl mb-4">
 								OrbitLabs is a cutting-edge blockchain development team specializing
 								in Cosmos, Ethereum, and Solana ecosystems. With our diverse
 								expertise, we offer comprehensive solutions for both on-chain and
 								cross-chain decentralized applications.
 							</p>
-							<p className="text-lg">
+							<p className="text-xl">
 								Our mission is to propel blockchain technology forward, helping
 								clients navigate the complex world of decentralized systems with
 								innovative and reliable solutions.
@@ -82,14 +98,14 @@ export function LandingPageComponent() {
 				</section>
 
 				<section id="services" className="container mx-auto px-4 py-20">
-					<h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+					<h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center text-neon-blue">
 						Our Services
 					</h2>
 					<div className="grid md:grid-cols-3 gap-8">
-						<Card className="bg-gray-800 border-blue-500">
+						<Card className="bg-gray-800 border-neon-blue transform hover:scale-105 transition">
 							<CardContent className="p-6">
-								<Globe className="h-12 w-12 mb-4 text-blue-400" />
-								<h3 className="text-xl font-bold mb-2">Cosmos Ecosystem</h3>
+								<Globe className="h-12 w-12 mb-4 text-neon-blue" />
+								<h3 className="text-2xl font-extrabold mb-2">Cosmos Ecosystem</h3>
 								<ul className="list-disc list-inside">
 									<li>Validator node operation</li>
 									<li>Chain upgrades and integrations</li>
@@ -97,10 +113,10 @@ export function LandingPageComponent() {
 								</ul>
 							</CardContent>
 						</Card>
-						<Card className="bg-gray-800 border-blue-500">
+						<Card className="bg-gray-800 border-neon-blue transform hover:scale-105 transition">
 							<CardContent className="p-6">
-								<Zap className="h-12 w-12 mb-4 text-blue-400" />
-								<h3 className="text-xl font-bold mb-2">Ethereum & Solana</h3>
+								<Zap className="h-12 w-12 mb-4 text-neon-blue" />
+								<h3 className="text-2xl font-extrabold mb-2">Ethereum & Solana</h3>
 								<ul className="list-disc list-inside">
 									<li>Smart contract development</li>
 									<li>DApp creation and optimization</li>
@@ -108,10 +124,12 @@ export function LandingPageComponent() {
 								</ul>
 							</CardContent>
 						</Card>
-						<Card className="bg-gray-800 border-blue-500">
+						<Card className="bg-gray-800 border-neon-blue transform hover:scale-105 transition">
 							<CardContent className="p-6">
-								<Code className="h-12 w-12 mb-4 text-blue-400" />
-								<h3 className="text-xl font-bold mb-2">Cross-Chain Solutions</h3>
+								<Code className="h-12 w-12 mb-4 text-neon-blue" />
+								<h3 className="text-2xl font-extrabold mb-2">
+									Cross-Chain Solutions
+								</h3>
 								<ul className="list-disc list-inside">
 									<li>Interoperability protocols</li>
 									<li>Cross-chain asset transfers</li>
@@ -126,14 +144,19 @@ export function LandingPageComponent() {
 					id="showcase"
 					className="container mx-auto px-4 py-20 bg-gray-800 rounded-lg"
 				>
-					<h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+					<h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center text-neon-blue">
 						Our Showcase
 					</h2>
 					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
 						{["Cosmos", "Osmosis", "Whitewhale", "Aura Network", "DeFi", "Meme"].map(
 							(item, index) => (
-								<div key={index} className="bg-gray-700 rounded-lg p-4 text-center">
-									<span className="text-lg font-semibold">{item}</span>
+								<div
+									key={index}
+									className="bg-gray-700 rounded-lg p-4 text-center transform hover:scale-105 transition"
+								>
+									<span className="text-xl font-extrabold text-neon-blue">
+										{item}
+									</span>
 								</div>
 							)
 						)}
@@ -141,7 +164,9 @@ export function LandingPageComponent() {
 				</section>
 
 				<section id="team" className="container mx-auto px-4 py-20">
-					<h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Team</h2>
+					<h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center text-neon-blue">
+						Our Team
+					</h2>
 					<div className="grid md:grid-cols-4 gap-8">
 						{[
 							{ role: "Solution Architect", icon: Server },
@@ -149,10 +174,13 @@ export function LandingPageComponent() {
 							{ role: "Smart Contract Engineer", icon: Code },
 							{ role: "Frontend Engineer", icon: Code },
 						].map((member, index) => (
-							<Card key={index} className="bg-gray-800 border-blue-500">
+							<Card
+								key={index}
+								className="bg-gray-800 border-neon-blue transform hover:scale-105 transition"
+							>
 								<CardContent className="p-6 text-center">
-									<member.icon className="h-16 w-16 mx-auto mb-4 text-blue-400" />
-									<h3 className="text-xl font-bold mb-2">{member.role}</h3>
+									<member.icon className="h-16 w-16 mx-auto mb-4 text-neon-blue" />
+									<h3 className="text-2xl font-extrabold mb-2">{member.role}</h3>
 								</CardContent>
 							</Card>
 						))}
@@ -160,43 +188,49 @@ export function LandingPageComponent() {
 				</section>
 
 				<section id="why-choose-us" className="container mx-auto px-4 py-20">
-					<h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+					<h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center text-neon-blue">
 						Why Choose OrbitLabs?
 					</h2>
 					<div className="grid md:grid-cols-2 gap-8">
-						<Card className="bg-gray-800 border-blue-500">
+						<Card className="bg-gray-800 border-neon-blue transform hover:scale-105 transition">
 							<CardContent className="p-6">
-								<h3 className="text-xl font-bold mb-4">
+								<h3 className="text-2xl font-extrabold mb-4">
 									Expertise Across Ecosystems
 								</h3>
 								<p>
-									Our team`&lsquo;`s diverse experience in Cosmos, Ethereum, and
-									Solana allows us to provide comprehensive solutions tailored to
-									your specific needs.
+									Our team's diverse experience in Cosmos, Ethereum, and Solana
+									allows us to provide comprehensive solutions tailored to your
+									specific needs.
 								</p>
 							</CardContent>
 						</Card>
-						<Card className="bg-gray-800 border-blue-500">
+						<Card className="bg-gray-800 border-neon-blue transform hover:scale-105 transition">
 							<CardContent className="p-6">
-								<h3 className="text-xl font-bold mb-4">End-to-End Development</h3>
+								<h3 className="text-2xl font-extrabold mb-4">
+									End-to-End Development
+								</h3>
 								<p>
 									From smart contracts to user interfaces, we handle every aspect
 									of your blockchain project with precision and care.
 								</p>
 							</CardContent>
 						</Card>
-						<Card className="bg-gray-800 border-blue-500">
+						<Card className="bg-gray-800 border-neon-blue transform hover:scale-105 transition">
 							<CardContent className="p-6">
-								<h3 className="text-xl font-bold mb-4">Cutting-Edge Solutions</h3>
+								<h3 className="text-2xl font-extrabold mb-4">
+									Cutting-Edge Solutions
+								</h3>
 								<p>
 									We stay at the forefront of blockchain technology, implementing
 									the latest advancements to give your project a competitive edge.
 								</p>
 							</CardContent>
 						</Card>
-						<Card className="bg-gray-800 border-blue-500">
+						<Card className="bg-gray-800 border-neon-blue transform hover:scale-105 transition">
 							<CardContent className="p-6">
-								<h3 className="text-xl font-bold mb-4">Reliable Partnership</h3>
+								<h3 className="text-2xl font-extrabold mb-4">
+									Reliable Partnership
+								</h3>
 								<p>
 									Our commitment to your success extends beyond development. We
 									provide ongoing support and maintenance to ensure your project
@@ -208,11 +242,14 @@ export function LandingPageComponent() {
 				</section>
 
 				<section id="contact" className="container mx-auto px-4 py-20">
-					<h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+					<h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center text-neon-blue">
 						Ready to Launch Your Blockchain Journey?
 					</h2>
 					<div className="max-w-md mx-auto">
-						<Button variant="outline" className="w-full text-lg py-6">
+						<Button
+							variant="outline"
+							className="w-full text-lg py-6 bg-neon-blue text-black hover:bg-neon-blue-light"
+						>
 							Contact Us Today
 						</Button>
 					</div>
@@ -229,7 +266,7 @@ export function LandingPageComponent() {
 						href="https://x.com/orbit__labs"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="text-primary hover:text-primary-foreground"
+						className="text-neon-blue hover:text-neon-blue-light"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -246,7 +283,7 @@ export function LandingPageComponent() {
 						href="https://github.com/orbitorg"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="text-primary hover:text-primary-foreground"
+						className="text-neon-blue hover:text-neon-blue-light"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +297,7 @@ export function LandingPageComponent() {
 					{/* Email */}
 					<Link
 						href="mailto:orbitlabs.work@proton.me"
-						className="text-primary hover:text-primary-foreground"
+						className="text-neon-blue hover:text-neon-blue-light"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

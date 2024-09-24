@@ -62,7 +62,6 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
@@ -78,4 +77,43 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+.animate-spin-slow {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.text-neon-blue {
+  color: #00FFFF;
+}
+
+.bg-neon-blue {
+  background-color: #00FFFF;
+}
+
+.bg-neon-blue-light {
+  background-color: #66FFFF;
+}
+
+.hover\:text-neon-blue-light:hover {
+  color: #66FFFF;
+}
+
+.hover\:bg-neon-blue-light:hover {
+  background-color: #66FFFF;
 }
