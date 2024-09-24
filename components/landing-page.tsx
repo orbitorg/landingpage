@@ -198,9 +198,9 @@ export function LandingPageComponent() {
 									Expertise Across Ecosystems
 								</h3>
 								<p>
-									Our team's diverse experience in Cosmos, Ethereum, and Solana
-									allows us to provide comprehensive solutions tailored to your
-									specific needs.
+									Our team&#39;s diverse experience in Cosmos, Ethereum, and
+									Solana allows us to provide comprehensive solutions tailored to
+									your specific needs.
 								</p>
 							</CardContent>
 						</Card>
