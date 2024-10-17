@@ -1,4 +1,5 @@
 "use client";
+import mixpanel from "mixpanel-browser";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,6 +8,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "./logo.jpg";
 import BlockchainImage from "./blockchain.jpg";
+
+if (process.env.NODE_ENV === "production")
+	mixpanel.init("43dedf530300a068689d77af5d4fce2d", {
+		debug: false,
+		track_pageview: true,
+		persistence: "localStorage",
+	});
 
 export function LandingPageComponent() {
 	return (
